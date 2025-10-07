@@ -52,7 +52,7 @@ let frameSinceLastBoulder = 0;
 
 function preload() {
   // Load all sprite images
-  imgExplorer = loadImage("pixel_art/Explorer.png");
+  imgExplorer = loadImage("pixel_art/explorer.png");
   imgSnake = loadImage("pixel_art/snake.png");
   imgBoulder = loadImage("pixel_art/boulder.png");
   imgCoin = loadImage("pixel_art/coin.png");
