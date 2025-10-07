@@ -138,7 +138,7 @@ function setup() {
 function update() {
     clear();
     background('skyblue');
-    
+
     camera.zoom = 2;
     camera.y = player.y - 50;
     camera.x += (player.x - camera.x) / 5;
@@ -156,7 +156,7 @@ function update() {
         bigJump();
     }
 
-    
+
 
     if (hidden) {
         timer();
@@ -164,16 +164,16 @@ function update() {
     }
 
     if (!hidden) {
-        if (youWin == true){  
+        if (youWin == true) {
             textAlign(CENTER)
             textSize(100);
             text('You Win!', 960, 540);
         }
-        else{
-        allSprites.remove();
-        textAlign(CENTER)
-		textSize(100);
-        text('You Were Found!', 960, 540);
+        else {
+            allSprites.remove();
+            textAlign(CENTER)
+            textSize(100);
+            text('You Were Found!', 960, 540);
         }
         // if (kb.presses ('r')) {
         //     startTime = millis();
@@ -185,8 +185,8 @@ function update() {
         // }
     }
 
-    if (exit.overlaps(player)){
-       let youWin = true;
+    if (exit.overlaps(player)) {
+        let youWin = true;
     }
 }
 

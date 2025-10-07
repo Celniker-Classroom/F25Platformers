@@ -27,7 +27,7 @@ let hook3;
 function preload() {
   ATTATCH = loadImage('assets/grappling hook test image.png');
   PLATFORMS = loadImage('assets/Piskel COncrete.png');
- 
+
   FIRE = loadImage('assets/3xfirer.png'); //this was supposed to be a gif but i was unable to get it to work, fix that later.
 }
 
@@ -43,7 +43,7 @@ function setup() {
   brick.tile = '=';
   brick.image = PLATFORMS;
   brick.physics = STATIC
-  
+
   tilesGroup = new Tiles(
     [
       '=...............=',
@@ -156,66 +156,66 @@ function setup() {
   player.physics = DYNAMIC;
   player.vel.y = 20;
   player.bounciness = 0
-//spikes and spike properties.
-let spike = new Sprite(2515, 0, 50, 'triangle'); 
-spike.color = 'red';
-spike.physics = 'STATIC';
-spike.rotation = 180;
+  //spikes and spike properties.
+  let spike = new Sprite(2515, 0, 50, 'triangle');
+  spike.color = 'red';
+  spike.physics = 'STATIC';
+  spike.rotation = 180;
 
-let spike1 = new Sprite(2565, 0, 50, 'triangle'); 
-spike1.color = 'red';
-spike1.physics = 'STATIC';
-spike1.rotation = 180;
+  let spike1 = new Sprite(2565, 0, 50, 'triangle');
+  spike1.color = 'red';
+  spike1.physics = 'STATIC';
+  spike1.rotation = 180;
 
-let spike2 = new Sprite(2615, 0, 50, 'triangle'); 
-spike2.color = 'red';
-spike2.physics = 'STATIC';
-spike2.rotation = 180;
+  let spike2 = new Sprite(2615, 0, 50, 'triangle');
+  spike2.color = 'red';
+  spike2.physics = 'STATIC';
+  spike2.rotation = 180;
 
-let spike3 = new Sprite(2665, 0, 50, 'triangle'); 
-spike3.color = 'red';
-spike3.physics = 'STATIC';
-spike3.rotation = 180;
+  let spike3 = new Sprite(2665, 0, 50, 'triangle');
+  spike3.color = 'red';
+  spike3.physics = 'STATIC';
+  spike3.rotation = 180;
 
-let spike4 = new Sprite(2715, 0, 50, 'triangle'); 
-spike4.color = 'red';
-spike4.physics = 'STATIC';
-spike4.rotation = 180;
+  let spike4 = new Sprite(2715, 0, 50, 'triangle');
+  spike4.color = 'red';
+  spike4.physics = 'STATIC';
+  spike4.rotation = 180;
 
-let spike5 = new Sprite(2765, 0, 50, 'triangle'); 
-spike5.color = 'red';
-spike5.collider = 'STATIC';
-spike5.rotation = 180;
+  let spike5 = new Sprite(2765, 0, 50, 'triangle');
+  spike5.color = 'red';
+  spike5.collider = 'STATIC';
+  spike5.rotation = 180;
 
 
 
 
 
   // Create and set platform sprite properties
-//(REPLACED BY TILES) but im leaving it hear incase you want to add it bakc later
+  //(REPLACED BY TILES) but im leaving it hear incase you want to add it bakc later
 
-gravityshift = new Sprite();
-gravityshift.x = 2450
-gravityshift.y = 250
-gravityshift.w = 10
-gravityshift.h = 10
+  gravityshift = new Sprite();
+  gravityshift.x = 2450
+  gravityshift.y = 250
+  gravityshift.w = 10
+  gravityshift.h = 10
 
-obstacle1 = new Sprite();
-obstacle1.x = 1400;
-obstacle1.y = 200
-obstacle1.w = 100;
-obstacle1.h = 5;
-obstacle1.color = 'red';
-obstacle1.physics = STATIC;
-obstacle1.image = FIRE
+  obstacle1 = new Sprite();
+  obstacle1.x = 1400;
+  obstacle1.y = 200
+  obstacle1.w = 100;
+  obstacle1.h = 5;
+  obstacle1.color = 'red';
+  obstacle1.physics = STATIC;
+  obstacle1.image = FIRE
 
-obstacle1emission = new Sprite 
-obstacle1emission.x = 1430
-obstacle1emission.y =200
-obstacle1emission.color = 'gray'
-obstacle1emission.physics = STATIC
-obstacle1emission.h = 10
-obstacle1emission.w = 10
+  obstacle1emission = new Sprite
+  obstacle1emission.x = 1430
+  obstacle1emission.y = 200
+  obstacle1emission.color = 'gray'
+  obstacle1emission.physics = STATIC
+  obstacle1emission.h = 10
+  obstacle1emission.w = 10
 
   // Create and set hook sprites
   hookithink = new Sprite();
@@ -247,7 +247,7 @@ obstacle1emission.w = 10
 
 function draw() {
 
-  if (player.x >= 4600){
+  if (player.x >= 4600) {
     camera.off();
     background('black');
     fill('white');
@@ -263,7 +263,7 @@ function draw() {
     camera.on();
     return; // Stop the draw loop
   }
-  
+
   if (health <= 0) {
     // Game over 
     camera.off();
@@ -299,23 +299,23 @@ function draw() {
     return; // Stop the draw loop
   }
 
- // if ((player.colliding(spike) || (player.colliding(spike1) ) || (player.colliding(spike2) ) || (player.colliding(spike3) ) || (player.colliding(spike4) ) || (player.colliding(spike5) ))){
-    // Game over. Unfortunately this part of the code did not work. I am unsure as to why.
+  // if ((player.colliding(spike) || (player.colliding(spike1) ) || (player.colliding(spike2) ) || (player.colliding(spike3) ) || (player.colliding(spike4) ) || (player.colliding(spike5) ))){
+  // Game over. Unfortunately this part of the code did not work. I am unsure as to why.
   // camera.off();
-   // background('black');
-   // fill('white');
-   // textSize(50);
+  // background('black');
+  // fill('white');
+  // textSize(50);
   //  textAlign(CENTER);
   //  text("Death by: Impalement", width / 2, height / 2);
-   // textSize(20);
-   // text("Press 'R' to restart", width / 2, height / 2 + 50);
+  // textSize(20);
+  // text("Press 'R' to restart", width / 2, height / 2 + 50);
 
   // if (kb.presses('R')) {f
-   // resetGame();
+  // resetGame();
   //  }
   //  camera.on();
-   // return; // Stop the draw loop
- // }
+  // return; // Stop the draw loop
+  // }
 
   // Normal game loop
   camera.x = player.x; // Set camera to follow player on X-axis
@@ -323,7 +323,7 @@ function draw() {
   clear();
   background('lightblue');
 
-  
+
 
   // Player movement
   if (!kb.pressing('left') && !kb.pressing('right')) {
@@ -427,7 +427,7 @@ function mousePressed() {
     grappleLine.color = 'black';
     grappleLine.collider = 'none';
     grappleLine.visible = false;
-  } else if ((!grappleJoint) && (player.x >= 3501)){
+  } else if ((!grappleJoint) && (player.x >= 3501)) {
     grappleTarget = new Sprite(hook3.x, hook3.y, 10, 10);
     grappleTarget.collider = 'static';
     grappleTarget.visible = true;
