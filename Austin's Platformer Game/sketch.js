@@ -25,7 +25,7 @@ let spike5;
 let hook3;
 
 function preload() {
-  ATTATCH = loadImage('assets/Hook attatching point.png');
+  ATTATCH = loadImage('assets/grappling hook test image.png');
   PLATFORMS = loadImage('assets/Piskel COncrete.png');
  
   FIRE = loadImage('assets/3xfirer.png'); //this was supposed to be a gif but i was unable to get it to work, fix that later.
