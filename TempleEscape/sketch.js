@@ -52,15 +52,15 @@ let frameSinceLastBoulder = 0;
 
 function preload() {
   // Load all sprite images
-  imgExplorer = loadImage("pixel_art/explorer.png");
-  imgSnake = loadImage("pixel_art/snake.png");
-  imgBoulder = loadImage("pixel_art/boulder.png");
-  imgCoin = loadImage("pixel_art/coin.png");
-  imgHeart = loadImage("pixel_art/heart.png");
-  imgCar = loadImage("pixel_art/car.png");
-  imgSpike = loadImage("pixel_art/spike.png");
-  imgGrass = loadImage("pixel_art/grass_dirt_block.png");
-  imgBg = loadImage("pixel_art/jungle_background.png");
+  imgExplorer = loadImage("pixelArt/explorer.png");
+  imgSnake = loadImage("pixelArt/snake.png");
+  imgBoulder = loadImage("pixelArt/boulder.png");
+  imgCoin = loadImage("pixelArt/coin.png");
+  imgHeart = loadImage("pixelArt/heart.png");
+  imgCar = loadImage("pixelArt/car.png");
+  imgSpike = loadImage("pixelArt/spike.png");
+  imgGrass = loadImage("pixelArt/grass_dirt_block.png");
+  imgBg = loadImage("pixelArt/jungle_background.png");
 }
 
 function setup() {
