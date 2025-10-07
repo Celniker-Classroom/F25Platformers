@@ -1,10 +1,10 @@
 let player, playerImg, time, youWin = false, startTime = 0, bigGroundSensorSwitch, groundSensorSwitch, normalSize = true, grow = false, shrink = false, groundSensor, grass, grassImg, dirt, dirtImg, stonePlatform, stonePlatformImg, door, doorImg, hidingBush, hidingBushImg, hidden = true, tilesGroup;
 function preload() {
-    grassImg = loadImage('images/grassTile.png');
-    dirtImg = loadImage('images/dirtTile.png');
+    grassImg = loadImage('images/GrassTile.png');
+    dirtImg = loadImage('images/DirtTile.png');
     // stonePlatformImg = loadImage('images/TileStonePlatform.png');
-    hidingBushImg = loadImage('images/hidingBushTile.png');
-    hidingPollImg = loadImage('images/hidingPollTile.png');
+    hidingBushImg = loadImage('images/HidingBushTile.png');
+    hidingPollImg = loadImage('images/HidingPollTile.png');
 }
 function setup() {
     new Canvas(1920, 1080);
