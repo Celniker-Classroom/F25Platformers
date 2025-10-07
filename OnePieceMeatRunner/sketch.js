@@ -3,7 +3,7 @@ let jumps = 1;
 //jump count
 function preload() {
 	soilImg = loadImage('Images/Dirt.png');
-	grassImg = loadImage('Images/Grass.png');
+	grassImg = loadImage('Images/grass.png');
 	coinImg = loadImage('Images/Coin3.png');
 	playerImg = loadImage('Images/Luffy.png');
 	luffyImg = loadImage('Images/Luffy2.png');
