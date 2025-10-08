@@ -61,7 +61,7 @@ function setup() {
  
   // Ground setup
   groundB.x = 400;
-  groundB.width = 1000;
+  groundB.width = 10000;
   groundB.height=500;
   groundB.physics = STATIC;
   groundB.y = height - 20;
