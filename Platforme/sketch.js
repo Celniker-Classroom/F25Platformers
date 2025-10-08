@@ -26,7 +26,7 @@ function setup() {
 	player.y = 890;
 	player.h = 38;
 	player.image = playerImg;
-	playerImg.resize(100, 80);
+	playerImg.resize(49, 38);
 	player.color = 'gray'
 	//ground
 	ground = new Group();
@@ -45,56 +45,56 @@ function setup() {
 	gts.h = 42;
 	gts.tile = '^';
 	gts.image = gtsImg;
-	gtsImg.resize(100, 84)
+	gtsImg.resize(50, 42)
 	gts.physics = STATIC;
 	gls = new Group();
 	gls.w = 50;
 	gls.h = 42;
 	gls.tile = '|';
 	gls.image = glsImg;
-	glsImg.resize(100, 84)
+	glsImg.resize(50, 42)
 	gls.physics = STATIC;
 	grs = new Group();
 	grs.w = 50;
 	grs.h = 42;
 	grs.tile = '1';
 	grs.image = grsImg;
-	grsImg.resize(100, 84)
+	grsImg.resize(50, 42)
 	grs.physics = STATIC;
 	gtrc = new Group();
 	gtrc.w = 50;
 	gtrc.h = 42;
 	gtrc.tile = '2';
 	gtrc.image = gtrcImg;
-	gtrcImg.resize(100, 84)
+	gtrcImg.resize(50, 42)
 	gtrc.physics = STATIC;
 	gtlc = new Group();
 	gtlc.w = 50;
 	gtlc.h = 42;
 	gtlc.tile = '3';
 	gtlc.image = gtlcImg;
-	gtlcImg.resize(100, 84)
+	gtlcImg.resize(50, 42)
 	gtlc.physics = STATIC;
 	gbrc = new Group();
 	gbrc.w = 50;
 	gbrc.h = 42;
 	gbrc.tile = '4';
 	gbrc.image = gbrcImg;
-	gbrcImg.resize(100, 84)
+	gbrcImg.resize(50, 42)
 	gbrc.physics = STATIC;
 	gblc = new Group();
 	gblc.w = 50;
 	gblc.h = 42;
 	gblc.tile = '5';
 	gblc.image = gblcImg;
-	gblcImg.resize(100, 84)
+	gblcImg.resize(50, 42)
 	gblc.physics = STATIC;
 	gbs = new Group();
 	gbs.w = 50;
 	gbs.h = 42;
 	gbs.tile = '6';
 	gbs.image = gbsImg;
-	gbsImg.resize(100, 84)
+	gbsImg.resize(50, 42)
 	gbs.physics = STATIC;
 	//spike
 	spike = new Group();
@@ -111,7 +111,7 @@ function setup() {
 	evil.color = 'red'
 	evil.physics = STATIC;
 	evil.image = enimieImg;
-	enimieImg.resize(100, 150);
+	enimieImg.resize(40, 90);
 	//prizes
 	mush = new Group();
 	mush.w = 30;
@@ -120,7 +120,7 @@ function setup() {
 	mush.color = 'yellow';
 	mush.physics = STATIC;
 	mush.image = mushImg;
-	mushImg.resize(90, 90);
+	mushImg.resize(30, 30);
 	//finish line
 	end = new Group();
 	end.w = 50;
@@ -209,12 +209,12 @@ function update() {
 	if (kb.pressing('left')) {
 		player.vel.x = -5;
 		player.image = playertImg;
-		playertImg.resize(100, 80);
+		playertImg.resize(49, 38);
 		started=true
 	} else if (kb.pressing('right')) {
 		player.vel.x = 5;
 		player.image = playerImg;
-		playerImg.resize(100, 80);
+		playerImg.resize(49, 38);
 		started=true
 	} else {
 		player.vel.x = 0;
