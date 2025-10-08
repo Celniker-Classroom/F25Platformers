@@ -52,7 +52,7 @@ function setup() {
  
   // Ball setup
   ball.x = halfWidth - 200;
-  ball.y = halfHeight + 400;
+  ball.y = halfHeight;
   ball.diameter = 50;
   ball.color="purple";
  
@@ -131,7 +131,7 @@ function setup() {
  
  
  
-  //tile obstacles
+  //tile obstacles; same obstacles spawned but with different coin locations
   tilePatterns = [
    
    
@@ -462,7 +462,7 @@ function setup() {
 
     ],
   ];
-
+//coin collect
   ball.overlaps(coin, coinCollect);
  }
  
@@ -495,7 +495,8 @@ function setup() {
   if (ball.collides(groundB)||ball.collides(topgrass)||ball.collides(rock)) {
     canjump = true;
   }
-
+  
+  //collide with fire to end game
   if(ball.collides(fire)){
     gameRunning=false;
     ball.velocity.x=0;
@@ -503,7 +504,7 @@ function setup() {
     ball.stroke="skyblue";
   }
  
- 
+ //spring collide jump boost
  if (ball.collides(spring)) {
   ball.velocity.y = -10;
   canjump = false;
@@ -593,6 +594,7 @@ function setup() {
  }
  }
  
+ //coin collect function
 function coinCollect(coin,ball){
   if(ball.overlaps(coin));
   ball.delete();
