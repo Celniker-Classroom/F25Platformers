@@ -144,7 +144,7 @@ function setup() {
 		'\n' + 'jump height: ' + jumpP + ' ---> ' + (jumpP + 0.5);
 	speedU.text = 'speed upgrade for: ' + sUpgradeC + ' coins ' + '\n' +
 		'\n' + 'speed: ' + speed + ' ---> ' + (speed + .5);
-	timing.visible = false;
+	timing.visible = true;
 	boot.layer = 2;
 
 
@@ -250,7 +250,7 @@ function update() {
 	let goal = new Sprite(-5000, 500, 1000, 100, STA);
 	goal.color = bgColor;
 	goal.strokeWeight = 0;
-	goal.text = 'Jimmy, always a weak rectangle,wanted to prove himself to the rectangle tribe by taking down the ' + '\n' + 'malevolent ufo but in order for weak Jimmy to destroy the UFO, he needs to upgrade his weak self to jump' + '\n' + ' higher, learn to stomp enemies, and go faster, and its up to you to make him win!';
+	goal.text = 'Jimmy, always a weak rectangle,wanted to prove himself to the rectangle tribe by taking down the ' + '\n' + 'malevolent ufo but in order for weak Jimmy to destroy the UFO, he needs to upgrade his weak self to jump' + '\n' + ' higher, learn to stomp enemies, and go faster, and its up to you to make him win!' + '\n' + 'PS: only a few specific combos for upgrades work, first 4 uprades you should get are 3 jump 1 time controls wasd';
 
 
 	//jimmy.rotateSpeed = 0;
@@ -318,10 +318,10 @@ end.text = 'This is the end' + '\n' + 'for now... come back in a few days for th
 			'........................w.....c.....c....w',
 			'...........................c..w.....w.c',
 			'...................w.......w..........w.ccccc',
-			'...........cs...wwwwwww............wcscsc.s.',
-			'.......cwsc.cs....w.cccccccc............wwwwwwssssww..........w........................w',
-			'......cw..scc.s....wwwwwwwww..................wwww.w.....w....w........................w',
-			'ccccccw....sc.cs.............w....................w...........w.....w...............w..w',
+			'.........cccs...wwwwwww............wcscsc.s.',
+			'.......cwscccs....w.cccccccc............wwwwwwssssww..........w........................w',
+			'......cw..scccs....wwwwwwwww..................wwww.w.....w....w........................w',
+			'ccccccw....scccs.............w....................w...........w.....w...............w..w',
 			'cccccw..........cccccccccc..w.w.cscscscscccc......wsssssssssssw....www.....www.....www.w.',
 			'========================================================================================='
 		],
