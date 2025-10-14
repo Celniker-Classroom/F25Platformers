@@ -117,8 +117,6 @@ function setup() {
 	jimmy.friction = 0.1;
 	// creation of canvas and the bg and calling of screen1 function
 
-}
-
 
 	text('COINS:' + coins, 250, 250);
 	background(bgColor);
